@@ -1,0 +1,108 @@
+
+#include <stdio.h>
+
+	void main()
+	{
+
+		printf(" C Programming \n");
+	}
+
+
+-----------------------------------------------
+#include <stdio.h>
+
+int main()
+{
+	int integer;
+	printf("Enter an integer: \n");
+	fflush(stdout);
+	scanf("%d",&integer);
+	printf("you entered: %d", integer);
+	return 0;
+}
+
+-------------------------------------------------
+#include <stdio.h>
+
+int main()
+{
+	int integer1;
+	int integer2;
+	int sum;
+	printf("Enter two integers: \n");
+	fflush(stdout);
+	scanf("%d &d", &integer1 , &integer2);
+	sum= integer1 + integer2;
+	printf("sum: %d", sum);
+	return 0;
+}
+--------------------------------------------
+#include <stdio.h>
+
+int main()
+{
+	float number1,number2,product;
+
+	printf("Enter two numbers: \n");
+	fflush(stdout); fflush(stdin);
+	scanf("%f %f",&number1, &number2);
+	product= number1 * number2;
+	printf("product: %f",product);
+	fflush(stdout); fflush(stdin);
+	return 0;
+}
+----------------------------------------
+#include <stdio.h>
+
+int main()
+    {
+    char ch;
+
+	printf("Enter a character: \n");
+	scanf("%c", &ch);
+    printf("The ASCII value is :%d",ch);
+
+	return 0;
+    }
+------------------------------------------
+#include <stdio.h>
+int main()
+{
+    float num1, num2, temp;
+    printf("Enter first number: ");
+    fflush(stdout); fflush(stdin);
+    scanf("%f",&num1);
+    printf("Enter second number: ");
+    fflush(stdout); fflush(stdin);
+    scanf("%f", &num2 );
+
+    temp= num1;
+    num1= num2;
+    num2= temp;
+
+    printf("After swapping, first number= %f\n",num1);
+    printf("After swapping, second number= %f",num2);
+
+    return 0;
+}
+---------------------------------------------------------
+#include <stdio.h>
+int main()
+{
+    float num1, num2;
+    printf("Enter first number: ");
+    fflush(stdout); fflush(stdin);
+    scanf("%f",&num1);
+    printf("Enter second number: ");
+    fflush(stdout); fflush(stdin);
+    scanf("%f", &num2 );
+
+   num1 = num1 - num2;
+   num2 = num1 + num2;
+   num1 = num2 - num1; 
+
+    printf("After swapping, first number= %f\n",num1);
+    printf("After swapping, second number= %f",num2);
+
+    return 0;
+}
