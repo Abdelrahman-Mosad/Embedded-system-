@@ -1,23 +1,20 @@
-
 #include <stdio.h>
-int power (int num1,int num2);
+void reverse();
 int main(){
-    int base, exp;
-    printf("Enter base number:");
-    scanf("%d",&base);
-    printf("Enter a number: ");
 
-    scanf("%d",&exp);
-    printf("%d^%d =%d", base,exp,power(base,exp));
+    printf("Enter a sentence: ");
+    reverse();
     return 0;
 
 }
-
-    int power(int base, int exp)
-
+    void reverse()
+    {
+        char c;
+        scanf("%c",&c);
+        if( c!='\n')
         {
-            if (exp!=0)
-            return( base*power(base,exp-1));
-
+            reverse();
+            printf("%c",c);
         }
+    }
      
